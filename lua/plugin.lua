@@ -48,14 +48,7 @@ require("lazy").setup({
   --     require("luasnip.loaders.from_vscode").lazy_load()
   --   end,
   -- },
-  -- {
-  --   "nvim-treesitter/nvim-treesitter",
-  --   config = function()
-  --     require('nvim-treesitter').setup({
-  --       ensure_installed = { "html", "css", "javascript", "typescript", "vue" },
-  --     })
-  --   end,
-  -- },
+  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   -- {
   --   "windwp/nvim-ts-autotag",
   --   config = function()
