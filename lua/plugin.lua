@@ -16,6 +16,10 @@ require("lazy").setup({
   { "nvim-tree/nvim-tree.lua" },
   { "nvim-lualine/lualine.nvim" },
 
+  -- LSP
+  -- telescope.nvim => 搜尋
+  -- elint(null-ls)
+  -- pretty format
   -- {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
   -- {'neovim/nvim-lspconfig'},
   -- {'hrsh7th/cmp-nvim-lsp'},
