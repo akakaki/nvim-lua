@@ -5,7 +5,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable r:elease
+    "--branch=stable", -- latest stable release
     lazypath,
   })
 end
@@ -15,44 +15,21 @@ require("lazy").setup({
   { "folke/tokyonight.nvim", priority = 1000, lazy = false },
   { "nvim-tree/nvim-tree.lua" },
   { "nvim-lualine/lualine.nvim" },
-
-  -- LSP
-  -- telescope.nvim => 搜尋
-  -- elint(null-ls)
-  -- pretty format
-  -- {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
-  -- {'neovim/nvim-lspconfig'},
-  -- {'hrsh7th/cmp-nvim-lsp'},
-  -- {'hrsh7th/nvim-cmp'},
-  -- {'L3MON4D3/LuaSnip'},
-  -- {'williamboman/mason.nvim'},
-  -- {'williamboman/mason-lspconfig.nvim'},
-  --
-  -- {
-  --   "neovim/nvim-lspconfig",
-  --   dependencies = {
-  --     { "hrsh7th/cmp-nvim-lsp" },
-  --   },
-  -- },
-  -- { "hrsh7th/nvim-cmp" },
-  -- { "hrsh7th/cmp-buffer" },
-  -- { "hrsh7th/cmp-path" },
-  -- { "hrsh7th/cmp-nvim-lsp" },
-  -- { "hrsh7th/cmp-nvim-lua" },
-  -- { "onsails/lspkind-nvim" },
-  -- { "saadparwaiz1/cmp_luasnip" },
-  -- { "onsails/lspkind-nvim" },
-  -- { "hrsh7th/cmp-cmdline" },
-  -- { "hrsh7th/cmp-vsnip" },
-  -- { "hrsh7th/vim-vsnip"},
-  -- {
-  --   "L3MON4D3/LuaSnip",
-  --   dependencies = { "rafamadriz/friendly-snippets" },
-  --   config = function()
-  --     require("luasnip.loaders.from_vscode").lazy_load()
-  --   end,
-  -- },
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+
+  -- lsp-zero
+  { "VonHeikemen/lsp-zero.nvim", branch = "v3.x" },
+  { "neovim/nvim-lspconfig" },
+  { "hrsh7th/cmp-nvim-lsp" },
+  { "hrsh7th/nvim-cmp" },
+  { "L3MON4D3/LuaSnip" },
+
+  -- mason
+  { "williamboman/mason.nvim" },
+  { "williamboman/mason-lspconfig.nvim" }
+
+  -- telescope.nvim => 搜尋
+  -- elint(null-ls) => 目前停止更新，後續仰賴配置 LSP
   -- {
   --   "windwp/nvim-ts-autotag",
   --   config = function()
