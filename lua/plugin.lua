@@ -26,8 +26,10 @@ require("lazy").setup({
 
   -- mason
   { "williamboman/mason.nvim" },
-  { "williamboman/mason-lspconfig.nvim" }
+  { "williamboman/mason-lspconfig.nvim" },
 
+  -- search
+  { "nvim-telescope/telescope.nvim", tag = "0.1.5", dependencies = { "nvim-lua/plenary.nvim" }  },
   -- telescope.nvim => 搜尋
   -- elint(null-ls) => 目前停止更新，後續仰賴配置 LSP
   -- {

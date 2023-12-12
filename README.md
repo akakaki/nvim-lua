@@ -52,3 +52,19 @@ mason
   - html_lsp
   - json_lsp
   - vue-language-server
+
+
+
+### 檔案搜尋(telescope.nvim)
+
+
+
+需要另外安裝 ripgrep 使用
+
+```
+$ sudo apt-get install ripgrep
+```
+
+參考資料
+- https://blog.csdn.net/lxyoucan/article/details/120369548
+- https://github.com/nvim-telescope/telescope.nvim/issues/1594
