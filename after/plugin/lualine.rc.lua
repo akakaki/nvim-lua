@@ -4,6 +4,6 @@ require("lualine").setup({
     section_separators = { left = '', right = '' },
   },
   sections = {
-    lualine_x = { 'encoding' }
+    lualine_x = { "encoding" }
   }
 })

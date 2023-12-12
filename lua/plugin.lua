@@ -30,14 +30,6 @@ require("lazy").setup({
 
   -- search
   { "nvim-telescope/telescope.nvim", tag = "0.1.5", dependencies = { "nvim-lua/plenary.nvim" }  },
-  -- telescope.nvim => 搜尋
-  -- elint(null-ls) => 目前停止更新，後續仰賴配置 LSP
-  -- {
-  --   "windwp/nvim-ts-autotag",
-  --   config = function()
-  --     require("nvim-ts-autotag").setup()
-  --   end,
-  -- },
 })
 
 
